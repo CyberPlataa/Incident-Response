@@ -1,4 +1,5 @@
 # Incident-Response
+<a href="https://imgur.com/WFB2DYI"><img src="https://i.imgur.com/WFB2DYI.jpg" title="source: imgur.com" /></a>
 
 ## Introduction
 I ran through the various incident alerts on my honeynet lab and referenced the IR playbook created by the lab creator Josh Madakor. 
@@ -45,4 +46,13 @@ The incident- to my judgement turned out to be a false positive. Due to the natu
 <a href="https://imgur.com/JcqnZ7b"><img src="https://i.imgur.com/JcqnZ7b.png" title="source: imgur.com" /></a>
 
 I made a note that the nature of our VM and the NSG without a firewall to filter traffic is ultimately the cause of the incident/alert and I layed out the next steps to correct and hopefully fix the incident. 
+
+The next incident I worked on was a privilege escalation. 
+<a href="https://imgur.com/aZfOFuj"><img src="https://i.imgur.com/aZfOFuj.png" title="source: imgur.com" /></a>
+
+I obviously am the reason for it... but until I get hired I AM PRETENDINGGGGG that this was a worker doing some sketchy looking activities. This user went on to do password resets, and messing with our keyvault. I closed out the incident as a benign positive. 
+
+<a href="https://imgur.com/WSfIwP3"><img src="https://i.imgur.com/WSfIwP3.png" title="source: imgur.com" /></a>
+
+
 
