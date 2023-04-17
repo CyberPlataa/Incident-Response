@@ -55,4 +55,9 @@ I obviously am the reason for it... but until I get hired I AM PRETENDINGGGGG th
 <a href="https://imgur.com/WSfIwP3"><img src="https://i.imgur.com/WSfIwP3.png" title="source: imgur.com" /></a>
 
 
+The last incident I responded to (for this post) was the detection of malware. I closed it- I was testing EICAR files and spammed the attacks. I'll be posting that incident (where I'm creating this alert) at a later time. 
 
+<a href="https://imgur.com/dtPoOxY"><img src="https://i.imgur.com/dtPoOxY.png" title="source: imgur.com" /></a>
+
+##Conclusion
+Documented, and closed out various different incidents involved in my honeynet lab. 
