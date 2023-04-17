@@ -32,3 +32,17 @@ Allowed me to see purely the log information of these related incidents.
 I ran a quick google search. The incident didn't really give me clear cut answers and found this article on the internet: 
 https://www.inversecos.com/2020/04/successful-4624-anonymous-logons-to.html
 
+"If your server has RDP or SMB open publicly to the internet you may see a suite of these logs on your server's event viewer. Although these are showing up as Event ID 4624 (which generally correlates to successful logon events), these are NOT successful access to the system without a correlating Event ID 4624 showing up with an Account Name \\domain\username and a type 10 logon code for RDP or a type 3 for SMB. You can double check this by looking at 4625 events for a failure, within a similar time range to the logon event for confirmation.
+
+The reason for this is because when a user initiates an RDP or SMB connection, the connection via RDP/SMB will be logged as a successful connection, BEFORE the user is prompted to enter their password. This means a successful 4624 will be logged for type 3 as an anonymous logon. When the user enters their credentials, this will either fail (if incorrect with 4625) or succeed showing up as another 4624 with the appropriate logon type and a username.
+"
+-Lina Lau
+
+Throughout the incident and my googles I kept a log using azure. 
+<a href="https://imgur.com/Y0gSgqd"><img src="https://i.imgur.com/Y0gSgqd.png" title="source: imgur.com" /></a>
+
+The incident- to my judgement turned out to be a false positive. Due to the nature of the initation of and RDP connection. 
+<a href="https://imgur.com/JcqnZ7b"><img src="https://i.imgur.com/JcqnZ7b.png" title="source: imgur.com" /></a>
+
+I made a note that the nature of our VM and the NSG without a firewall to filter traffic is ultimately the cause of the incident/alert and I layed out the next steps to correct and hopefully fix the incident. 
+
