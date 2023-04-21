@@ -3,6 +3,8 @@
 
 ## Introduction
 I ran through the various incident alerts on my honeynet lab and referenced the IR playbook created by the lab creator Josh Madakor. 
+
+
 <a href="https://imgur.com/DsNpCSn"><img src="https://i.imgur.com/DsNpCSnb.png" title="source: imgur.com" /></a>
 
 
@@ -19,7 +21,7 @@ I ran the query:
 SecurityEvent
 | where EventID == 4624
 
-and found a long list of logs. I got 28 total successful brute force attempts in a short amount of time. All within seconds of each other. The IP address tied into the incident was the one activating my alerts for this sever alert though.
+Found a long list of logs. I got 28 total successful brute force attempts in a short amount of time. All within seconds of each other. The IP address tied into the incident was the one activating my alerts for this sever alert though.
 
 The next query I ran: 
 SecurityEvent
